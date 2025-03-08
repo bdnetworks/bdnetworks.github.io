@@ -1,95 +1,209 @@
 <!DOCTYPE html>
-<html lang="en">
-  
-<!-- Mirrored from designing-world.com/suha-3.3.0/vendors.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Jan 2025 14:37:36 GMT -->
+<html lang="bn">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover, shrink-to-fit=no">
-    <meta name="description" content="Suha - Multipurpose E-commerce Mobile HTML Template">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="theme-color" content="#625AFA">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <!-- The above tags *must* come first in the head, any other head content must come *after* these tags -->
-<center><img src="img/police.png" alt="police" width="40%" height="auto">
-<div class="table-container">
-<table>
-  <thead>
-    <tr>
-      <th>থানার নাম</th>
-      <th>মোবাইল নম্বর</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td data-label="Header 1">নেত্রকোণা মডেল থানা </td>
-      <td data-label="Header 2">মোবাইল- ০১৩২০১০৪১৮৫</td>
-    </tr>
-    <tr>
-      <td data-label="Header 1">কেন্দুয়া থানা</td>
-      <td data-label="Header 2">মোবাইল- ০১৩২০১০৪৩৪১</td>
-    </tr>
-    <tr>
-      <td data-label="Header 1">আটপাড়া থানা</td>
-      <td data-label="Header 2">মোবাইল- ০১৩২০১০৪২৬৩</td>
-    </tr>
-    <tr>
-      <td data-label="Header 1">মদন থানা</td>
-      <td data-label="Header 2">মোবাইল- ০১৩২০১০৪৩৬৭</td>
-    </tr>
-    <tr>
-      <td data-label="Header 1">মোহনগঞ্জ থানা</td>
-      <td data-label="Header 2">মোবাইল- ০১৩২০১০৪৩৯৩</td>
-    </tr>
-    <tr>
-      <td data-label="Header 1">খালিয়াজুরী থানা</td>
-      <td data-label="Header 2">মোবাইল- ০১৩২০১০৪৪১৯</td>
-    </tr>
-    <tr>
-      <td data-label="Header 1">দূর্গাপুর থানা</td>
-      <td data-label="Header 2">মোবাইল- ০১৩২০১০৪২৮৯</td>
-    </tr>
-    <tr>
-      <td data-label="Header 1">কলমাকান্দা থানা</td>
-      <td data-label="Header 2">মোবাইল- ০১৩২০১০৪২৩৭</td>
-    </tr>
-    <tr>
-      <td data-label="Header 1">পূর্বধলা থানা</td>
-      <td data-label="Header 2">মোবাইল- ০১৩২০১০৪৩১৫</td>
-    </tr>
-    <tr>
-      <td data-label="Header 1">বারহাট্টা থানা</td>
-      <td data-label="Header 2">মোবাইল- ০১৩২০১০৪২১১</td>
-    </tr>
-    <tr>
-      <td data-label="Header 1">পেমই তদন্ত কেন্দ্র, কেন্দুয়া</td>
-      <td data-label="Header 2">মোবাইল- ০১৩২০১০৪৩৬৪</td>
-    </tr>
-    
-  </tbody>
-</table>
-</div>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>কেন্দুয়া থানা এবং মোবাইল নম্বর</title>
+    <!-- Font Awesome CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+           
+            background: #e0f7fa;
+            overflow: hidden;
+            animation: fadeIn 2s ease-in-out;
+        }
 
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
 
-<style>
-.table-container {
-    overflow-x: auto;
-}
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
-    background-color: white;
-    min-width: 100%; /* Ensures horizontal scroll for small screens */
-}
-table, th, td {
-    border: 1px solid #ddd;
-}
-th, td {
-    padding: 8px;
-    text-align: left;
-}
-th {
-    background-color: #f2f2f2;
-}
-</style>
+        .container {
+            display: flex;
+            align-items: center;
+            background-color: #ffffff;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            margin: 5px 0;
+            width: 80%;
+            justify-content: space-between;
+            opacity: 0;
+            animation: fadeInUp 0.5s forwards;
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 15px;
+            background-color: #4CAF50;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .icon:hover {
+            transform: scale(1.1);
+            background-color: #ff5722;
+        }
+
+        .icon i {
+            font-size: 30px;
+            color: white;
+        }
+
+        .text {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            text-align: left;
+        }
+
+        .text .phone {
+            font-size: 14px;
+            font-weight: normal;
+            color: #555;
+        }
+
+        /* Pulse animation for call button */
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .call-button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            padding: 15px;
+            font-size: 20px;
+            cursor: pointer;
+            animation: pulse 1.5s infinite; /* Pulse animation */
+            transition: transform 0.3s ease;
+        }
+
+        .call-button:hover {
+            background-color: #0056b3;
+            transform: scale(1.1); /* Increase size on hover */
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            padding-top: 20px;
+        }
+
+        .container {
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+<center><img src="img/police.png" alt="police" width="40%" height="auto"></center>
+    <div class="content">
+        <!-- থানার তথ্য ১ -->
+        <div class="container">
+            <div class="icon">
+                <i class="fas fa-shield-alt"></i> <!-- Police Icon -->
+            </div>
+            <div class="text">
+                নেত্রকোণা মডেল থানা<br><span class="phone">মোবাইল- ০১৩২০১০৪১৮৫</span>
+            </div>
+            <a href="tel:+8801320104185">
+                <button class="call-button">📞</button>
+            </a>
+        </div>
+
+        <!-- থানার তথ্য ২ -->
+        <div class="container">
+            <div class="icon">
+                <i class="fas fa-shield-alt"></i> <!-- Police Icon -->
+            </div>
+            <div class="text">
+                কেন্দুয়া থানা<br><span class="phone">মোবাইল- ০১৩২০১০৪৩৪১</span>
+            </div>
+            <a href="tel:+8801320104341">
+                <button class="call-button">📞</button>
+            </a>
+        </div>
+
+        <!-- থানার তথ্য ৩ -->
+        <div class="container">
+            <div class="icon">
+                <i class="fas fa-shield-alt"></i> <!-- Police Icon -->
+            </div>
+            <div class="text">
+                আটপাড়া থানা<br><span class="phone">মোবাইল- ০১৩২০১০৪২৬৩</span>
+            </div>
+            <a href="tel:+8801320104263">
+                <button class="call-button">📞</button>
+            </a>
+        </div>
+
+        <!-- থানার তথ্য ৪ -->
+        <div class="container">
+            <div class="icon">
+                <i class="fas fa-shield-alt"></i> <!-- Police Icon -->
+            </div>
+            <div class="text">
+                মদন থানা<br><span class="phone">মোবাইল- ০১৩২০১০৪৩৬৭</span>
+            </div>
+            <a href="tel:+8801320104367">
+                <button class="call-button">📞</button>
+            </a>
+        </div>
+
+        <!-- থানার তথ্য ৫ -->
+        <div class="container">
+            <div class="icon">
+                <i class="fas fa-shield-alt"></i> <!-- Police Icon -->
+            </div>
+            <div class="text">
+                মোহনগঞ্জ থানা<br><span class="phone">মোবাইল- ০১৩২০১০৪৩৯৩</span>
+            </div>
+            <a href="tel:+8801320104393">
+                <button class="call-button">📞</button>
+            </a>
+        </div>
+
+        <!-- Additional stations can follow the same structure -->
+        
+    </div>
+</body>
+</html>
